@@ -28,7 +28,7 @@ const port = 8000;
 const server = app.listen(port, listening);
 function listening(){
     console.log("server running"); 
-    console.log(`running on localhost: {$port}`);
+    console.log(`running on localhost: ${port}`);
 }
 
 // Create a get route that respnds with all required data
@@ -44,4 +44,4 @@ const addData = (req, res) => {
     res.status(200).send(projectData);
   };
 
-app.post("/add", addData);
+app.post('/add', addData);
