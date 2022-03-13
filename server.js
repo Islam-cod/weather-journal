@@ -32,15 +32,16 @@ function listening(){
 }
 
 // Create a get route that respnds with all required data
+const sendData = (req, res) => res.status(200).send(projectData);
 app.get("/results", sendData);
 
-const sendData = (req, res) => res.status(200).send(projectData);
+
 
 // Create a post route that adds the data to the Server
-app.post("/add", addData);
-
 const addData = (req, res) => {
     projectData = req.body;
     console.log(projectData);
     res.status(200).send(projectData);
   };
+
+app.post("/add", addData);
