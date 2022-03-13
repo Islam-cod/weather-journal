@@ -16,7 +16,7 @@ const zip =  document.getElementById('zip').value;
 const feeling = document.getElementById('feelings').value;
 getWeather(baseURL, zip, apiKey)
     .then(function(data) {
-        postData = ('/add', {date:d , temp:data.list[0].main.temp, feeling: feeling})
+        postData ('/add', {temp:data.list[0].main.temp, date:d , content: feeling})
         updateUI();
     })
 };
@@ -61,6 +61,7 @@ let postData = async(url = '', data = {}) => {
 // server resonds to client(get request)
 const updateUI = async() => {
   const request = await fetch("/results");
+  console.log(request)
   try {
       const allData = await request.json();
       console.log(allData);
