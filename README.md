@@ -9,3 +9,5 @@ This simple interactive project enables the user to get the weather of a beloved
 -JavaScript ES6
 -Express.js
 -Node.js
+
+![App Screenshot](https://ibb.co/QYQy2zd)
