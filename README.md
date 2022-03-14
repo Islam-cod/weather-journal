@@ -10,4 +10,4 @@ This simple interactive project enables the user to get the weather of a beloved
 -Express.js
 -Node.js
 
-![App Screenshot]("https://i.ibb.co/SVyFhWr/weather-app.png")
+![App Screenshot](https://i.ibb.co/SVyFhWr/weather-app.png)
