@@ -31,10 +31,6 @@ function listening(){
     console.log(`running on localhost: ${port}`);
 }
 
-
-
-
-
 // Create a post route that adds the data to the Server
 const addData = (req, res) => {
     projectData = req.body;
